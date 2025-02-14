@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Tic-Tac-Toe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+    
+        <main>
+            <div class="jumbotron text-center">
+                <h1>Tic-Tac-Toe</h1>
+                <p id="errorMsg">Fyll i nicknames samt färg och börja spela!</p>
+            </div>
+            <form> 
+            <div id="div-in-form">
+                <div class="col">
+                    <label for="nick1">Nickname spelare 1:</label>
+                    <input type="text" id="nick1" placeholder="nickname" title="nickname för spelare 1">
+                </div>
+                <div class="col">
+                    <label for="nick2">Nickname spelare 2:</label>
+                    <input type="text" id="nick2" placeholder="nickname" title="nickname för spelare 2">
+                </div>
+                <div class="col">
+                    <label for="color1">Färg spelare 1:</label>
+                    <input type="color" id="color1" value="#FFFFFF" title="färg för spelare 1">
+                </div>
+                <div class="col">
+                    <label for="color2">Färg spelare 2:</label>
+                    <input type="color" id="color2" value="#FFFFFF" title="färg för spelare 2">
+                </div>
+                <div id="div-with-a">
+                    <a href="#" id="newGame" >Starta spelet!</a>
+                </div>              
+            </div>
+            </form>
+
+            <!-- Gui för spelplan-->
+            <div id="game-area" class="gameArea">
+                <!-- Varje tabell-cell(td) märks med attributet data-id -->
+                <table class="ml-auto mr-auto">
+
+                    <tr>                
+                        <td data-id='0'> </td>
+                        <td data-id='1'> </td>
+                        <td data-id='2'> </td>
+                    </tr>
+                    <tr>
+                        <td data-id='3'> </td>
+                        <td data-id='4'> </td>
+                        <td data-id='5'> </td>
+                    </tr>
+                    <tr>
+                        <td data-id='6'> </td>
+                        <td data-id='7'> </td>
+                        <td data-id='8'> </td>
+                    </tr>
+
+                </table>
+            </div>
+            
+        </main>
+        <aside>
+            <a href="#">
+                <!--creative common, bildkälla: https://www.pinterest.se/pin/444871269436524427/ -->
+                <img alt="bild på spel" src="images/side-image.jpg">
+            </a>
+        </aside>
+    
+    </body>
+</html>
