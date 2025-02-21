@@ -1,4 +1,28 @@
+.d-none {
+    display: none !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
 main{
     text-align: center;
     padding: 50px;
 }
+.jumbotron {
+    background-color: #DEDEDE;
+    margin-inline: 1.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+.text-center {
+    text-align: center;
+}
+
