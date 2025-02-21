@@ -1,8 +1,8 @@
-.d-none {
+d-none {
     display: none !important;
 }
 
-* {
+{
     margin: 0;
     padding: 0;
 }
@@ -45,48 +45,47 @@ main {
 /* Formuläret får layout som på bilden */
 #div-in-form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Två kolumner */
-    gap: 10px; /* Mellanrum mellan fälten */
+    grid-template-columns: repeat(2, 1fr);
+    /* Två kolumner */
+    gap: 10px;
+    /* Mellanrum mellan fälten */
     max-width: 400px;
     margin-bottom: 20px;
 }
 
-/* Justerar formulärfält */
-.col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    /* Justerar formulärfält */
 
-/* Anpassar startknappen */
-#div-with-a {
-    grid-column: span 2; /* Gör knappen bredare */
-    text-align: center;
-}
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    /* Anpassar startknappen */
 
-
-#game-area {
-    margin: auto;
-    background-color: #ccc;
-    padding: 1px;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-td {
-    width: 125px;
-    height: 125px;
-    font-size: 50px;
-    text-align: center;
-    border: 1px solid darkgrey;
-    background-color: white;
-    vertical-align: middle;
-}
+    #div-with-a {
+        grid-column: span 2; /*Gör knappen bredare */
+        text-align: center;
+    }
 
 
+    #game-area {
+        margin: auto;
+        background-color: #ccc;
+        padding: 1px;
+    }
 
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
 
+    td {
+        width: 125px;
+        height: 125px;
+        font-size: 50px;
+        text-align: center;
+        border: 1px solid darkgrey;
+        background-color: white;
+        vertical-align: middle;
+    }
