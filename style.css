@@ -1,8 +1,8 @@
-d-none {
+.d-none {
     display: none !important;
 }
 
-{
+* {
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,8 @@ body {
     font-family: "Roboto", serif;
     font-size: 1rem;
     box-sizing: border-box;
-
+    width: 100%;
+    margin: 0;
     html {
         font-size: 16px;
     }
@@ -23,7 +24,9 @@ main{
     background-color: #DEDEDE;
     padding: 1.5rem;
     border-radius: 0.3rem;
-    margin: 0 0 1rem 0;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 500px;
 }
 .text-center {
     text-align: center;
@@ -43,49 +46,61 @@ main {
 }
 
 /* Formuläret får layout som på bilden */
-#div-in-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Två kolumner */
-    gap: 10px;
-    /* Mellanrum mellan fälten */
-    max-width: 400px;
-    margin-bottom: 20px;
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 500px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);  /* Skugga på höger sida */
+}
+#newGame {
+    background-color: #007bff;    /* Blå färg */
+    color: white;                 /* Vit text */
+    padding: 5px 10px;          /* Inre spacing */
+    border-radius: 3px;          /* Rundade hörn */
+    text-decoration: none;       /* Tar bort understrykning */
+    display: inline-block;       /* Gör länken till ett block-element */
 }
 
-    /* Justerar formulärfält */
+/* Justerar formulärfält */
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Anpassar startknappen */
-
-    #div-with-a {
-        grid-column: span 2; /*Gör knappen bredare */
-        text-align: center;
-    }
+/* Anpassar startknappen */
+#div-with-a {
+    grid-column: span 2; /* Gör knappen bredare */
+    text-align: right;
+}
 
 
-    #game-area {
-        margin: auto;
-        background-color: #ccc;
-        padding: 1px;
-    }
+#game-area
+    margin: auto;
+    background-color: #ccc;
+    padding: 1px;
+}
 
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
-    td {
-        width: 125px;
-        height: 125px;
-        font-size: 50px;
-        text-align: center;
-        border: 1px solid darkgrey;
-        background-color: white;
-        vertical-align: middle;
-    }
+td {
+    width: 125px;
+    height: 125px;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid darkgrey;
+    background-color: white;
+    vertical-align: middle;
+}
+aside{
+    display: none;
+}
+
+
+
