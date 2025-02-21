@@ -54,6 +54,7 @@ form {
     width: 60%;
     max-width: 500px;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);  /* Skugga på höger sida */
+
 }
 #newGame {
     background-color: #007bff;    /* Blå färg */
@@ -78,7 +79,7 @@ form {
 }
 
 
-#game-area
+#game-area {
     margin: auto;
     background-color: #ccc;
     padding: 1px;
