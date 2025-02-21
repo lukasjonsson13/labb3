@@ -40,3 +40,15 @@ form{
     max-width: 500px;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
 }
+#newGame{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+#div-with-a {
+    text-align: center;
+    margin-top: 20px;            /* Lite space ovanför knappen */
+}
