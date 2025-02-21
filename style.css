@@ -78,7 +78,7 @@ form {
 }
 
 
-#game-area
+#game-area{
     margin: auto;
     background-color: #ccc;
     padding: 1px;
