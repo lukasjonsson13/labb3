@@ -35,16 +35,6 @@ input[type="text"]:focus, textarea:focus {
 }
 
 
-
-.td { /* tabell styling */
-    width: 125px;
-    height: 125px;
-    font-size: 50px;
-    text-align: center;
-    border: 1px darkgrey;
-    border-spacing: 0;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -74,30 +64,29 @@ main {
     text-align: center;
 }
 
+
+
 #game-area {
-    display: grid;
-    grid-template-columns: repeat(3, 125px); /* 3 kolumner */
-    grid-template-rows: repeat(3, 125px); /* 3 rader */
-    gap: 1px;
-    background-color: #ccc;
-    width: max-content;
     margin: auto;
+    background-color: #ccc;
+    padding: 1px;
 }
 
-#game-area tr {
-    display: contents; /* Tar bort <tr> från layouten */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-#game-area td {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border: 1px solid #ccc;
-    font-size: 50px;
+td {
     width: 125px;
     height: 125px;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid darkgrey;
+    background-color: white;
+    vertical-align: middle;
 }
+
 
 
 
