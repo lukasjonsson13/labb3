@@ -18,7 +18,6 @@ body {
 }
 main{
     text-align: center;
-    padding: 50px;
 }
 .jumbotron {
     background-color: #DEDEDE;
@@ -29,3 +28,76 @@ main{
 .text-center {
     text-align: center;
 }
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+}
+
+
+
+.td { /* tabell styling */
+    width: 125px;
+    height: 125px;
+    font-size: 50px;
+    text-align: center;
+    border: 1px darkgrey;
+    border-spacing: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Formuläret får layout som på bilden */
+#div-in-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Två kolumner */
+    gap: 10px; /* Mellanrum mellan fälten */
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Justerar formulärfält */
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Anpassar startknappen */
+#div-with-a {
+    grid-column: span 2; /* Gör knappen bredare */
+    text-align: center;
+}
+
+#game-area {
+    display: grid;
+    grid-template-columns: repeat(3, 125px); /* 3 kolumner */
+    grid-template-rows: repeat(3, 125px); /* 3 rader */
+    gap: 1px;
+    background-color: #ccc;
+    width: max-content;
+    margin: auto;
+}
+
+#game-area tr {
+    display: contents; /* Tar bort <tr> från layouten */
+}
+
+#game-area td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-size: 50px;
+    width: 125px;
+    height: 125px;
+}
+
+
+
