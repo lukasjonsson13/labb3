@@ -5,23 +5,53 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; font-size: 1rem;
+
 }
-    @media screen and (max-width: 415px){
-        main{
+    @media screen and (max-width: 415px) {
+        main {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
+
+            html {
+                font-size: 16px;
+            }
         }
-        .jumbotron{
+    }
+        .jumbotron {
             background-color: #DEDEDE;
             padding: 1.5rem;
             border-radius: 0.3rem;
             margin: 0 0 1rem 0;
         }
-        aside{
+
+        .text-center {
+            text-align: center;
+        }
+
+        .col {
+            width: 100%;
+            justify-content: center;
+        }
+
+        form {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.3rem;
+            margin: 0 auto;
+            width: 60%;
+            max-width: 500px;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        aside {
             display: none;
         }
+
         table {
             border-collapse: collapse;
             border-spacing: 0;
@@ -36,7 +66,8 @@
             background-color: white;
             vertical-align: middle;
         }
-    }
+
+
 
 
 
