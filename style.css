@@ -9,7 +9,7 @@
     font-family: 'Roboto', sans-serif; font-size: 1rem;
 
 }
-    @media screen and (max-width: 415px) {
+@media screen and (max-width: 415px){
         main {
             display: flex;
             flex-direction: column;
@@ -21,37 +21,65 @@
                 font-size: 16px;
             }
         }
-    }
+
         .jumbotron {
             background-color: #DEDEDE;
             padding: 1.5rem;
             border-radius: 0.3rem;
-            margin: 0 0 1rem 0;
+            margin: 1rem 0 1rem 0;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .text-center {
             text-align: center;
         }
 
-        .col {
-            width: 100%;
-            justify-content: center;
-        }
+
 
         form {
             background-color: white;
             padding: 1.5rem;
             border-radius: 0.3rem;
             margin: 0 auto;
-            width: 60%;
+            width: 85%;
             max-width: 500px;
             box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+
+        }
+        #newGame {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
         }
 
+        #div-with-a {
+            text-align: right;
+        }
+        .col {
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+
+        }
         aside {
             display: none;
         }
-
+        #color1{
+            width: 100%;
+        }
+        #color2 {
+            width: 100%;
+        }
         table {
             border-collapse: collapse;
             border-spacing: 0;
@@ -66,7 +94,193 @@
             background-color: white;
             vertical-align: middle;
         }
+}
 
+
+
+
+@media screen and (max-width: 1181px) and (min-width: 415px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    main {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+        form {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.3rem;
+            margin: 0 auto;
+            width: 67%;
+            max-width: 500px;
+            box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+
+        }
+        .col {
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+
+        }
+        #color1{
+             width: 100%;
+         }
+        #color2 {
+        width: 100%;
+         }
+        #newGame {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        #div-with-a {
+            text-align: right;
+        }
+        html{
+            font-size: 18px;
+        }
+        aside {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            width: 30%;
+
+        }
+        td {
+            width: 125px;
+            height: 125px;
+            text-align: center;
+            border: 1px solid darkgrey;
+            background-color: white;
+            vertical-align: middle;
+        }
+        .jumbotron {
+            background-color: #DEDEDE;
+            padding: 1.5rem;
+            border-radius: 0.3rem;
+            margin: 1rem 0 1rem 0;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+@media screen and (min-width: 1181px){
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    }
+    html{
+        font-size: 22px;
+    }
+    main {
+        flex: 2;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    form {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 0.3rem;
+        margin: 0 auto;
+        width: 90%;
+        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+
+    }
+    #div-in-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2%;
+
+    }
+    .col {
+        width: 49%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #color1{
+        width: 100%;
+    }
+    #color2 {
+        width: 100%;
+    }
+    #newGame {
+        background-color: #007bff;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 1rem;
+        border: 2px solid transparent;
+    }
+    #newGame:hover {
+        background-color: white;
+        color: #007bff;
+        border: 2px solid #007bff;
+    }
+    #div-with-a {
+        text-align: left;
+    }
+    html{
+        font-size: 18px;
+    }
+    aside {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+
+    }
+    td {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        border: 1px solid darkgrey;
+        background-color: white;
+        vertical-align: middle;
+    }
+    .jumbotron {
+        background-color: #DEDEDE;
+        padding: 1.5rem;
+        border-radius: 0.3rem;
+        margin: 1rem 0 1rem 0;
+        height: 10rem;
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
 
 
 
