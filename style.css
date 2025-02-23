@@ -4,7 +4,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 2px;
 }
 body {
     font-family: "Roboto", serif;
@@ -27,6 +27,7 @@ main{
     margin: 0 auto;
     width: 60%;
     max-width: 500px;
+
 }
 .text-center {
     text-align: center;
@@ -58,8 +59,8 @@ form {
 #newGame {
     background-color: #007bff;    /* Blå färg */
     color: white;                 /* Vit text */
-    padding: 5px 10px;          /* Inre spacing */
-    border-radius: 3px;          /* Rundade hörn */
+    padding: 2px 4px;          /* Inre spacing */
+    border-radius: 2px;          /* Rundade hörn */
     text-decoration: none;       /* Tar bort understrykning */
     display: inline-block;       /* Gör länken till ett block-element */
 }
@@ -69,6 +70,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px
 }
 
 /* Anpassar startknappen */
@@ -85,13 +87,15 @@ form {
 }
 
 table {
+    padding-top: 10px;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
 td {
-    width: 125px;
-    height: 125px;
+
+    width: 90px;
+    height: 90px;
     font-size: 50px;
     text-align: center;
     border: 1px solid darkgrey;
