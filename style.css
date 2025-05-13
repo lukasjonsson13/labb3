@@ -17,9 +17,10 @@
             justify-content: center;
             text-align: center;
 
-            html {
-                font-size: 16px;
-            }
+            
+        }
+        html {
+            font-size: 16px;
         }
 
         .jumbotron {
@@ -72,7 +73,7 @@
 
         }
         aside {
-            display: none;
+            display:none;
         }
         #color1{
             width: 100%;
