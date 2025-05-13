@@ -6,8 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; font-size: 1rem;
-
 }
 @media screen and (max-width: 415px){
         main {
@@ -21,12 +19,15 @@
                 font-size: 16px;
             }
         }
+    body{
+        font-family: 'Roboto', sans-serif; font-size: 1rem;
+    }
 
         .jumbotron {
             background-color: #DEDEDE;
             padding: 1.5rem;
             border-radius: 0.3rem;
-            margin: 1rem 0 1rem 0;
+            margin-bottom: 1rem;
             height: 10rem;
             display: flex;
             flex-direction: column;
@@ -108,6 +109,7 @@
         width: 100%;
         max-width: 1000px;
         margin: auto;
+        font-family: 'Roboto', sans-serif; font-size: 1rem;
     }
 
     main {
@@ -191,6 +193,7 @@
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    font-family: 'Roboto', sans-serif; font-size: 1rem;
     }
     html{
         font-size: 22px;
